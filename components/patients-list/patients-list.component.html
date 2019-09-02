@@ -1,0 +1,7 @@
+<h1 class="text--center">Hi Doctor!</h1>
+<h3 class="text--center">Your patients for today:</h3>
+<ul class="patients__list">
+  <li class="list__item__container" *ngFor="let patient of list">
+    <mat-card class="item__container__card"> {{ patient.name }} - {{ patient.age }} y.o </mat-card>
+  </li>
+</ul>
